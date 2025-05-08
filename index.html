@@ -11,64 +11,90 @@
       <h1 class="logo">Lorem</h1>
       <nav class="main-nav">
         <ul class="nav-list">
-          <li><a href="#">Consectetur</a></li>
-          <li><a href="#">Sit amet</a></li>
-          <li><a href="#">Eiusmod tempor</a></li>
+          <li>
+            <i> <a href="#">Consectetur</a></i>
+          </li>
+
+          <li>
+            <i> <a href="#">Sit amet</a></i>
+          </li>
+
+          <li>
+            <i>
+              <a href="#">Eiusmod tempor</a>
+            </i>
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="hero-section">
-      <div class="hero-text">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <h3>Sed do eiusmod tempor</h3>
-      </div>
+      <div class="hero-details">
+        <div class="hero-text">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <h3>Sed do eiusmod tempor</h3>
+        </div>
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <img src="" alt="Price" />
-          <span class="stat-value">$10 000</span>
-        </div>
-        <div class="stat-item">
-          <img src="" alt="Discount" />
-          <span class="stat-value">30%</span>
-        </div>
-        <div class="stat-item">
-          <img src="" alt="Profit" />
-          <span class="stat-value">17%</span>
+        <div class="hero-stats">
+          <div class="stat-item" id="stat_item_max_width">
+            <img src="./assets/checkMark.png" alt="Price" class="check-mark" />
+            <span class="stat-value" id="stat_value_margin_left_max"
+              >$10 000</span
+            >
+          </div>
+
+          <div class="stat-item" id="stat_item_minimal_width">
+            <img
+              src="./assets/checkMark.png"
+              alt="Discount"
+              class="check-mark"
+            />
+            <span class="stat-value">30%</span>
+          </div>
+
+          <div class="stat-item" id="stat_item_middle_width">
+            <img src="./assets/checkMark.png" alt="Profit" class="check-mark" />
+            <span class="stat-value" id="stat_value_margin_left_middle"
+              >17%</span
+            >
+          </div>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="" alt="Main visual" />
+        <img src="./assets/firstPhoto.png" alt="Main visual" />
       </div>
     </section>
 
-    <section class="features-section">
+    <section class="contact-section">
+      <div class="contact-image">
+        <img src="/assets/secondPhoto.png" alt="Contact visual" />
+      </div>
+
       <div class="features-list">
         <article class="feature-item">
-          <img src="" alt="Feature 1" />
+          <img src="./assets/features.png" alt="Feature 1" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius omnis
             quidem voluptatem repellat?
           </p>
         </article>
         <article class="feature-item">
-          <img src="" alt="Feature 2" />
+          <img src="./assets/features.png" alt="Feature 2" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius omnis
             quidem voluptatem repellat?
           </p>
         </article>
         <article class="feature-item">
-          <img src="" alt="Feature 3" />
+          <img src="./assets/features.png" alt="Feature 3" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius omnis
             quidem voluptatem repellat?
           </p>
         </article>
         <article class="feature-item">
-          <img src="" alt="Feature 4" />
+          <img src="./assets/features.png" alt="Feature 4" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius omnis
             quidem voluptatem repellat?
@@ -76,9 +102,13 @@
         </article>
       </div>
       <button class="order-btn">Order</button>
+
+      <div class="contact-image">
+        <img src="./assets/thirdPhoto.png" alt="Contact visual" />
+      </div>
     </section>
 
-    <section class="contact-section">
+    <section class="features-section">
       <form action="" method="post" class="contact-form">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your email" required />
@@ -88,10 +118,6 @@
         </label>
         <input type="submit" value="Submit" class="submit-btn" />
       </form>
-
-      <div class="contact-image">
-        <img src="" alt="Contact visual" />
-      </div>
     </section>
 
     <footer class="site-footer">
